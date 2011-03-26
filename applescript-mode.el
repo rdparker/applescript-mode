@@ -122,7 +122,7 @@ for a block opening statement are given this extra offset."
               '("and" "app" "application" "considering" "div"
                 "else" "end" "exit" "is" "mod" "not" "on" "or"
                 "if" "ignoring" "reopen" "repeat"
-                "tell" "then" "to"
+                "tell" "then" "to" "try"
                 "using[ \t]terms[ \t]from"
                 "with[ \t]timeout" "with[ \t]transaction")))
         ;; commands
