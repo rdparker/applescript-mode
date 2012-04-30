@@ -1,5 +1,10 @@
 ;;; applescript-mode.el --- major mode for editing AppleScript source
 
+;;; Author: sakito <sakito@users.sourceforge.jp>
+;;; Packager: Kao Félix <kcfelix@gmail.com>
+;;; Keywords: languages, tools
+;;; Version: 1.0
+
 ;; Copyright (C) 2004  MacEmacs JP Project
 
 ;;; Credits:
@@ -9,9 +14,6 @@
 ;;   http://pc.2ch.net/test/read.cgi/mac/1034581863/
 ;; Copyright (C) 2004 Harley Gorrell <harley@mahalito.net>
 ;;   http://www.mahalito.net/~harley/elisp/osx-osascript.el
-
-;; Author: sakito <sakito@users.sourceforge.jp>
-;; Keywords: languages, tools
 
 (defconst applescript-mode-version "$Revision$"
   "The current version of the AppleScript mode.")
@@ -341,6 +343,9 @@ contain this package.")
   (if applescript-mode-hook
       (run-hooks 'applescript-mode-hook)
     (run-hooks 'applescript-mode-hook)))
+
+;;;###autoload
+(add-to-list 'auto-mode-alist '("\\.applescript$" . applescript-mode))
 
 (when (not (or (rassq 'applescript-mode auto-mode-alist)
   (push '("\\.applescript$" . applescript-mode) auto-mode-alist))))
