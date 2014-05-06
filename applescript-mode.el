@@ -333,7 +333,6 @@ contain this package.")
         font-lock-defaults '(applescript-font-lock-keywords)
         paragraph-separate "[ \t\n\f]*$"
         paragraph-start    "[ \t\n\f]*$"
-        require-final-newline t
         comment-start "-- "
         comment-end   ""
         comment-start-skip "---*[ \t]*"
